@@ -1,6 +1,6 @@
 <?php
 
-namespace Nemrutco\NovaGlobalFilter;
+namespace Granello\NovaGlobalFilter;
 
 use Illuminate\Database\Eloquent\Builder;
 

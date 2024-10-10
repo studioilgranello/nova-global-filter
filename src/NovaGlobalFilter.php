@@ -1,6 +1,6 @@
 <?php
 
-namespace Nemrutco\NovaGlobalFilter;
+namespace Granello\NovaGlobalFilter;
 
 use Laravel\Nova\Card;
 
@@ -37,7 +37,7 @@ class NovaGlobalFilter extends Card
         $this->filters = $filters;
     }
 
-    public function jsonSerialize() :array
+    public function jsonSerialize(): array
     {
         return array_merge(parent::jsonSerialize(), [
             'filters' => collect($this->filters ?? [])->map(function ($filter) {
